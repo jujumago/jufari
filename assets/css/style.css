@@ -8,15 +8,110 @@
 	position: relative;
 }
 
-#titleText{
+#titleTextContainer{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	font-size: 14vw;
+	text-align: center;
+	font-family: 'Safari';
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	line-height: 5%;
+}
+
+#titleText{	
+	background: -webkit-linear-gradient(yellow, #ff4500);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+#titleCaption{
+	font-size: 4.5vw;
 	color: white;
+	position: absolute;
+	left: 47.5%;
+}
+
+.imgCarousel{
+	opacity: 0.6;
+}
+
+div > i{
+	color: #32cd32;
+	margin-left: -5vw;
+	margin-right: -5vw;
+}
+
+@font-face{
+	font-family: 'Safari';
+	src: url(../fonts/safari.otf);
 }
 
 #welcomeRow{
 
 }
 
+.animalBanner{
+	width: 25%;
+	position: relative;
+}
+
+
+.clearFix{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.animalBannerText{
+	width: 25%;
+	height: 100%;
+	padding-right: 0;
+	color: white;
+	font-size: 9vw;
+	font-family: 'Safari';
+}
+
+.animalBannerTextLeft{
+	float: left;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	transform: translateY(-25%);
+}
+
+.animalBannerTextRight{
+	float: right;
+	position: absolute;
+	right: 18%;
+	top: 50%;
+	transform: translateY(-25%);
+}
+
+.animalBannerImgLeft{
+	float: left;
+	transform: scaleX(-1);
+}
+
+.animalBannerImgRight{
+	float: right;
+}
+
+#birdBanner{
+	background-color: #212121;
+}
+
+#reptileBanner{
+	background-color: #040301;
+}
+
+#mammalBanner{
+	background-color: black;
+}
+
+.divSpace{
+	height: 5vw;
+}
