@@ -17,9 +17,11 @@
 	text-align: center;
 	font-family: 'Safari';
 	margin: 0;
-	padding: 0;
-	width: 100%;
+	padding: 4vw 1vw 6vw 4vw;
+	width: 80%;
 	line-height: 5%;
+	background-color: rgba(220, 220, 220, 0.5);
+	border-radius: 20px;
 }
 
 #titleText{	
@@ -36,7 +38,7 @@
 }
 
 .imgCarousel{
-	opacity: 0.6;
+	opacity: 0.9;
 }
 
 div > i{
@@ -50,13 +52,74 @@ div > i{
 	src: url(../fonts/safari.otf);
 }
 
-#welcomeRow{
 
+/*End of landing page*/
+
+
+#welcomeCard{
+	display: inline-block;
+	margin: 5vw;
+	width: 88vw;
+	height: 60vw;
+	position: relative;
 }
+
+#safariManSVG{
+	float: left;
+	position: absolute;
+	width: 12.5vw;
+	height: 12.5vw;
+	top: 37%;
+	left: 6%;
+}
+
+.calloutBanner{
+	float: left;
+	position: absolute;
+	left: 31%;
+}
+
+#calloutBanner1{
+	top: 16%;
+}
+
+#calloutBanner2{
+	top: 36%;
+}
+
+#calloutBanner3{
+	top: 56%;
+}
+
+#calloutBanner4{
+	top: 76%;
+}
+
+
+
+
+#cardWelcomeContainer{
+	float: right;
+	width: 63%;
+	height: 80%;
+	background-color: grey;
+	margin-right: 5vw;
+/*	margin-top: 1vw;*/
+}
+
+
+/*End of Welcome Card*/
+
+
+
+
+
 
 .animalBanner{
 	width: 25%;
 	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -67,37 +130,43 @@ div > i{
 }
 
 .animalBannerText{
-	width: 25%;
-	height: 100%;
+	width: 35%;
+	height: 10vw;
 	padding-right: 0;
-	color: white;
-	font-size: 9vw;
+/*	color: white;*/
+	font-size: 7vw;
 	font-family: 'Safari';
+	background: -webkit-linear-gradient(yellow, #ff4500);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	z-index: 3;
 }
 
 .animalBannerTextLeft{
 	float: left;
 	position: absolute;
-	left: 5%;
+	left: 10%;
 	top: 50%;
-	transform: translateY(-25%);
+	transform: translateY(-55%);
 }
 
 .animalBannerTextRight{
 	float: right;
 	position: absolute;
-	right: 18%;
+	right: 3%;
 	top: 50%;
-	transform: translateY(-25%);
+	transform: translateY(-55%);
 }
 
 .animalBannerImgLeft{
 	float: left;
 	transform: scaleX(-1);
+	z-index: 2;
 }
 
 .animalBannerImgRight{
 	float: right;
+	z-index: 2;
 }
 
 #birdBanner{
@@ -112,6 +181,11 @@ div > i{
 	background-color: black;
 }
 
-.divSpace{
-	height: 5vw;
+.bannerLeaves{
+	z-index: 3;
 }
+
+.divSpace{
+	height: 3vw;
+}
+
