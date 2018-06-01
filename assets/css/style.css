@@ -125,72 +125,74 @@ div > i{
 	font-size: 3vw;
 	position: absolute;
 	top: 3%;
+	padding-left: 3vw;
+	padding-right: 2vw7
 }
 
 #cardWelcomeText1{
 	margin-top: 30%;
 	opacity: 1;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #cardWelcomeText2{
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #cardWelcomeText3{
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #cardWelcomeText4{
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #cardWelcomeText5{
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #calloutBanner1:hover ~ #cardWelcomeText1{
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #calloutBanner1:hover ~ #cardWelcomeText2{
 	opacity: 1;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #calloutBanner2:hover ~ #cardWelcomeText1{
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #calloutBanner2:hover ~ #cardWelcomeText3{
 	opacity: 1;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #calloutBanner3:hover ~ #cardWelcomeText1{
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #calloutBanner3:hover ~ #cardWelcomeText4{
 	opacity: 1;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #calloutBanner4:hover ~ #cardWelcomeText1{
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #calloutBanner4:hover ~ #cardWelcomeText5{
 	opacity: 1;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 /*End of Welcome Card*/
@@ -271,18 +273,35 @@ div > i{
 
 /*End of banner*/
 
-#navBar{
+#navContainer{
 	position: fixed;
+	top: 8%;
 	right: 0;
-	top: 20vh;
-	width: 8%;
-	max-height: 1100px;
+}
+
+#navBar{	
+	width: 100%;
+	max-height: 1500px;
 	background-color: rgba(220, 220, 220, 0.8);
 	color: white;
 	border-radius: 10px;
 	text-align: center;
 	transform: translateX(200px);
 	transition-duration: 0.5s;
+}
+
+
+.navBtn{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+#navSafariManHolder{
+	padding-bottom: 3vw;
+	padding-left: 3vw;
 }
 
 .navIcon{
@@ -304,16 +323,12 @@ div > i{
 
 #navAboutIcon{
 	margin-top: 45%;
+	color: yellow;
 }
 
 #navContactIcon{
 	margin-top: 45%;
-}
-
-#navSafariManHolder{
-	position: fixed;
-	right: 1%;
-	top: 4vh;
+	color: #ff4500;
 }
 
 #navSafariMan{
@@ -321,7 +336,234 @@ div > i{
 	width: 6vw;
 }
 
-#navSafariManHolder:hover ~ #navBar{
+#navContainer:hover > #navBar{
 	transition-duration: 0.5s;
 	transform: translateX(0px);
+}
+
+#navContactText{
+	margin-bottom: 2vw;
+}
+
+/*End of Nav Bar*/
+
+
+
+/*Birds Page*/
+
+.siteContainer{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.bannerMain{
+	position: absolute;
+}
+
+.siteImg{
+	width: 100%;
+}
+
+p{
+	color: white;
+}
+
+.descriptionCard{
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.descriptionText{
+	font-size: 2vw;
+}
+
+#beakCallout{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#wingCallout{
+	position: absolute;
+	top: 40%;
+	left: 20%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#beakDescription{
+	bottom: 10%;
+	right: 15%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#wingDescription{
+	bottom: 10%;	
+	left: 10%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+.bannerMain:hover > #beakCallout{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+.bannerMain:hover > #wingCallout{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#beakCallout:hover ~ #beakDescription{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#wingCallout:hover ~ #wingDescription{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+/*Reptile Page*/
+
+#scaleCallout{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#fangCallout{
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#scaleDescription{
+	top: 30%;
+	right: 15%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#fangDescription{
+	bottom: 10%;	
+	left: 10%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+.bannerMain:hover > #scaleCallout{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+.bannerMain:hover > #fangCallout{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#scaleCallout:hover ~ #scaleDescription{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#fangCallout:hover ~ #fangDescription{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+/*Mammal Page*/
+
+#eyesCallout{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#furCallout{
+	position: absolute;
+	bottom: 30%;
+	right: 20%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#eyesDescription{
+	top: 20%;
+	right: 15%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#furDescription{
+	bottom: 20%;	
+	left: 30%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+.bannerMain:hover > #eyesCallout{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+.bannerMain:hover > #furCallout{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#eyesCallout:hover ~ #eyesDescription{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#furCallout:hover ~ #furDescription{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+/*Footer*/
+
+footer{
+	height: 7vw;
+	width: 100%;
+	background-color: #32cd32;
+	padding-top: 1.1vw;
+	padding-left: 2vw;
+}
+
+footer > p{
+	float: left;
+	padding-top: 1.5vw;
+	font-size: 2vw;
+}
+
+p ~ a{
+	font-size: 4vw;
+	letter-spacing: 4vw;
+	color: white;
+	float: right;
+}
+
+.bannerFooter{
+	position: fixed;
+	bottom: 0;
+}
+
+footer > h3{
+	color: white;
+	float: right;
+	padding-top: 1.3vw;
+	padding-right: 2vw;
+	font-size: 3vw;
 }
