@@ -59,6 +59,7 @@ div > i{
 #welcomeCard{
 	display: inline-block;
 	margin: 5vw;
+	padding: 0;
 	width: 88vw;
 	height: 60vw;
 	position: relative;
@@ -77,11 +78,13 @@ div > i{
 	float: left;
 	position: absolute;
 	left: 31%;
+	z-index: 10;
 }
 
 #calloutBanner1{
 	top: 16%;
 }
+
 
 #calloutBanner2{
 	top: 36%;
@@ -95,16 +98,86 @@ div > i{
 	top: 76%;
 }
 
-
-
-
 #cardWelcomeContainer{
 	float: right;
-	width: 63%;
-	height: 80%;
-	background-color: grey;
-	margin-right: 5vw;
-/*	margin-top: 1vw;*/
+	width: 52vw;
+	height: 54vw;
+	position: absolute;
+	right: 3%;
+	top: 5%;
+}
+
+.cardWelcome{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 54vw;
+	width: 100%;
+}
+
+.cardWelcomeText{
+	margin-top: 40%;
+	font-size: 3vw;
+}
+
+#cardWelcomeText{
+	margin-top: 30%;
+}
+
+#cardWelcome1{
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+#cardWelcome2{
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+#cardWelcome3{
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+#cardWelcome4{
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+#cardWelcome5{
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+#calloutBanner1:hover #cardWelcome1{
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+#calloutBanner1:hover #cardWelcome2{
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
 }
 
 
