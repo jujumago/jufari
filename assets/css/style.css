@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+#siteContainer{
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+
 #landingPage{
 	position: relative;
 }
@@ -77,14 +83,13 @@ div > i{
 .calloutBanner{
 	float: left;
 	position: absolute;
-	left: 31%;
+	left: -10%;
 	z-index: 10;
 }
 
 #calloutBanner1{
 	top: 16%;
 }
-
 
 #calloutBanner2{
 	top: 36%;
@@ -118,75 +123,77 @@ div > i{
 .cardWelcomeText{
 	margin-top: 40%;
 	font-size: 3vw;
+	position: absolute;
+	top: 3%;
 }
 
-#cardWelcomeText{
+#cardWelcomeText1{
 	margin-top: 30%;
-}
-
-#cardWelcome1{
 	opacity: 1;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+	transition-duration: 0.5s;
 }
 
-#cardWelcome2{
+#cardWelcomeText2{
 	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+	transition-duration: 0.5s;
 }
 
-#cardWelcome3{
+#cardWelcomeText3{
 	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+	transition-duration: 0.5s;
 }
 
-#cardWelcome4{
+#cardWelcomeText4{
 	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+	transition-duration: 0.5s;
 }
 
-#cardWelcome5{
+#cardWelcomeText5{
 	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+	transition-duration: 0.5s;
 }
 
-#calloutBanner1:hover #cardWelcome1{
+#calloutBanner1:hover ~ #cardWelcomeText1{
 	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+	transition-duration: 0.5s;
 }
 
-#calloutBanner1:hover #cardWelcome2{
+#calloutBanner1:hover ~ #cardWelcomeText2{
 	opacity: 1;
-	-webkit-transition: opacity 0.3s;
-	-moz-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
+	transition-duration: 0.5s;
 }
 
+#calloutBanner2:hover ~ #cardWelcomeText1{
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#calloutBanner2:hover ~ #cardWelcomeText3{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#calloutBanner3:hover ~ #cardWelcomeText1{
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#calloutBanner3:hover ~ #cardWelcomeText4{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+#calloutBanner4:hover ~ #cardWelcomeText1{
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+#calloutBanner4:hover ~ #cardWelcomeText5{
+	opacity: 1;
+	transition-duration: 0.5s;
+}
 
 /*End of Welcome Card*/
-
-
-
-
-
 
 .animalBanner{
 	width: 25%;
@@ -262,3 +269,59 @@ div > i{
 	height: 3vw;
 }
 
+/*End of banner*/
+
+#navBar{
+	position: fixed;
+	right: 0;
+	top: 20vh;
+	width: 8%;
+	max-height: 1100px;
+	background-color: rgba(220, 220, 220, 0.8);
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	transform: translateX(200px);
+	transition-duration: 0.5s;
+}
+
+.navIcon{
+	font-size: 5vw;
+}
+
+.navText{
+	font-size: 2vw;
+}
+
+#navHomeIcon{
+	margin-top: 40%;
+	margin-bottom: 0;
+}
+
+#navHomeText{
+	margin-top: 0;
+}
+
+#navAboutIcon{
+	margin-top: 45%;
+}
+
+#navContactIcon{
+	margin-top: 45%;
+}
+
+#navSafariManHolder{
+	position: fixed;
+	right: 1%;
+	top: 4vh;
+}
+
+#navSafariMan{
+	height: 6vw; 
+	width: 6vw;
+}
+
+#navSafariManHolder:hover ~ #navBar{
+	transition-duration: 0.5s;
+	transform: translateX(0px);
+}
